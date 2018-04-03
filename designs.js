@@ -18,6 +18,7 @@ $(function() {
   });
 
   $('ul').on('click', 'li', function() {
+    // Upon li item click, toggleClass() adds class 'strike' for it and fadeOut() completely hides it
     $(this).toggleClass('strike').fadeOut('slow');
   });
 
