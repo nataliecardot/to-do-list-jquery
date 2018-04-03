@@ -2,7 +2,7 @@ $(function() {
 
   $('.button').click(function() {
     let toAdd = $('input[name=listItem]').val();
-    // Inserts specified element as first child (div with class .item) of target element (class .list)
+    // Inserts li as first child of ul
     $('ul').prepend('<li>' + toAdd + '</li>');
     // Clears input box after clicking '+'
     $('input[name=listItem]').val('');
