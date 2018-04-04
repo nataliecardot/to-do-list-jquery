@@ -38,6 +38,10 @@ input:focus {
   outline: 0 none;
 }
 
+button:focus {
+  outline: 0 none;
+}
+
 button.button {
   margin-left: -29.8px;
   /* 2px added to account for default 1px padding of input box set by user agent (browser) stylesheet */
@@ -63,12 +67,13 @@ ul {
 /* Applies styling to any li descendants of ul (descendant combinator) */
 ul li {
   text-align: left;
+  /* Prevents default bullet points */
   list-style-type: none;
   margin: auto;
   cursor: pointer;
   position: relative;
   background-color: #eee;
- /* First value sets top and bottom padding; second value sets right and left */
+  /* First value sets top and bottom padding; second value sets right and left */
   padding: 1.5px 0;
 }
 
