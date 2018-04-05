@@ -1,16 +1,17 @@
 $(function() {
 
   $('.button').click(function() {
-    let toAdd = $('input[name=listItem]').val();
+    let toAdd = $('input[name="listItem"]').val();
+    // If nothing in input box, ceases function execution
     if (toAdd === '') return;
     // Inserts li as first child of ul
     $('ul').prepend('<li>' + toAdd + '</li>');
     // Clears input box after clicking '+'
-    $('input[name=listItem]').val('');
+    $('input[name="listItem"]').val('');
   });
 
-  // Upon hitting enter, triggers button click and prevents page from refreshing and event bubbling and capturing/trickling
-  $('input[name=listItem]').keypress(function(e) {
+  // Upon hitting enter, triggers button click and prevents page from refreshing
+  $('input[name="listItem"]').keypress(function(e) {
     if (e.which == 13) {
       $('.button').click();
       e.preventDefault();
