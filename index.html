@@ -5,6 +5,7 @@
   	<title>To-Do List</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="designs.js"></script>
 	</head>
 	<body>
@@ -15,7 +16,8 @@
         <button type="button" class="button">+</button>
       </form>
   		<br><br>
-  		<ul>
+      <!-- Class 'sortable' enables sorting with jQuery UI method .sortable() -->
+  		<ul class="sortable">
         <li>Work on projects for one hour</li>
         <li>Go for a walk</li>
         <li>Meditate</li>

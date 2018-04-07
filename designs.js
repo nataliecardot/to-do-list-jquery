@@ -23,4 +23,7 @@ $(function() {
     $(this).toggleClass('strike').fadeOut('slow');
   });
 
+  // Enables drag reordering of list items (uses linked jQuery UI library)
+  $('.sortable').sortable();
+
 });
