@@ -19,7 +19,7 @@ body {
 }
 
 form {
-  /* Needed to display button next to input box  */
+  /* Displays button next to input box */
   display: inline-block;
 }
 
