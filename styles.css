@@ -23,11 +23,13 @@ form {
   display: inline-block;
 }
 
-input[type="text"] {
+input {
   border: 1px solid #ccc;
   height: 1.6em;
   width: 29em;
   color: #666;
+  /* Adds space between text and input box outlines */
+  padding-left: 0.5em;
 }
 
 /* Sets appearance of input box boundaries when user clicks inside it */
