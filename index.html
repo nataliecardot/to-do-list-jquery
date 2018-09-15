@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <!-- Ensures proper rendering and touch zooming -->
@@ -7,19 +7,20 @@
     <!-- Forces IE 8/9/10 to use its latest rendering engine -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
   	<title>To-Do List</title>
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="icon" href="../img/favicon-32.png" sizes="32x32">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="designs.js"></script>
+    <script src="script.js"></script>
 	</head>
 	<body>
     <div class="container">
   		<h2>To Do</h2>
   		<form name="listForm">
-  			<input type="text" name="listItem" placeholder="Add new">
-        <button type="button" class="button">+</button>
+        <!-- These elements must be on the same line for styling. Button class of button is used in JavaScript -->
+  			<input type="text" name="listItem" placeholder="Add new"><button type="button" class="button">+</button>
       </form>
-  		<br><br>
       <!-- Class 'sortable' enables sorting with jQuery UI method sortable() -->
   		<ul class="sortable">
         <li>Work on projects for one hour</li>
